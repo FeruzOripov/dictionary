@@ -12,16 +12,19 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyAppHome extends StatelessWidget {
+class MyAppHome extends StatefulWidget {
+  @override
+  _MyAppHomeState createState() => _MyAppHomeState();
+}
+
+class _MyAppHomeState extends State<MyAppHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Hello, World"),
       ),
-      body: Center(
-        child: Text("Hello, World"),
-      ),
+      body: Center(child: Text("Hello, World"),)
     );
   }
 }
