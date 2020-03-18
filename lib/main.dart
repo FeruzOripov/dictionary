@@ -22,6 +22,7 @@ class MyAppHome extends StatefulWidget {
 class _MyAppHomeState extends State<MyAppHome> {
   final _searchFieldController = TextEditingController();
   List<dynamic> _definitions = [];
+  bool _isComposing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +39,11 @@ class _MyAppHomeState extends State<MyAppHome> {
             child:
               TextField(
                 controller: _searchFieldController,
+                onChanged: (String text) {
+                  setState(() {
+                    _isComposing = text.length > 0;
+                  });
+                },
                 decoration: InputDecoration(
                   labelText: 'Enter a word',
                 ),
@@ -52,10 +58,11 @@ class _MyAppHomeState extends State<MyAppHome> {
                 },
               ),
               RaisedButton(
+                color: _isComposing ? Colors.blue : null,
                 child: Text("SEARCH"),
-                onPressed: () {
+                onPressed: _isComposing ? () {
                   _fetchInfo(_searchFieldController.value.text);
-                },
+                } : null,
               ),
             ],
           ),
