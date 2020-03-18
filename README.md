@@ -1,16 +1,8 @@
-# dictionary
+# Simple Dictionary
 
-A new Flutter project.
+Simple dictionary app for getting description of typed word using [Oxfor Dictionaries API](https://developer.oxforddictionaries.com).
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Default Page | Type a word | And get descriptions |
+|-------------|-------------|-------------|
+| ![Screenshot_1](photo_2020-03-18_20-30-20.jpg) | ![Screenshot_2](photo_2020-03-18_20-30-21.jpg) | ![Screenshot_3](photo_2020-03-18_20-30-22.jpg) |
