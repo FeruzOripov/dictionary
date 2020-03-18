@@ -1,6 +1,6 @@
 # Simple Dictionary
 
-Simple dictionary app for getting description of typed word using [Oxfor Dictionaries API](https://developer.oxforddictionaries.com).
+Simple dictionary app for getting description of typed word using [Oxford Dictionaries API](https://developer.oxforddictionaries.com).
 
 
 | Default Page | Type a word | And get descriptions |
