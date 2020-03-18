@@ -73,8 +73,8 @@ class _MyAppHomeState extends State<MyAppHome> {
 
   _fetchInfo(String word) async {
     print(word);
-    final appId = '1aa4061a';
-    final appKey = '3b3d888192734986e2de4f5b711397df';
+    final appId = '<your_app_id>'; // Set app_id
+    final appKey = '<your_app_key>'; // Set app_key
     final response = await http.get('https://od-api.oxforddictionaries.com/api/v2/entries/en-us/' + word.toLowerCase(), headers: {'app_id': appId, 'app_key': appKey});
     setState(() {
       if (response.statusCode == 200) {
